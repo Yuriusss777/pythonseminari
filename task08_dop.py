@@ -4,7 +4,7 @@ dShoco = int(input("Введите требуемое количество до�
 
 if (dShoco / lShoco) == (dShoco // lShoco):
     print(f"Да, можно отломить {dShoco} дольки")
-elif (dShoco / bShoco) == (dShoco // bShoco):
+elif dShoco / bShoco == dShoco // bShoco:
     print(f"да, можно отломить {dShoco} дольки")
 else:
     print(f"нет, нельзя отломить {dShoco} дольки")

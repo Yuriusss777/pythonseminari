@@ -13,5 +13,3 @@ if summa2 == summa1:
     print("yes")
 else:
     print("no")
-
-#
