@@ -18,3 +18,15 @@
 # 2
 # (каждое число вводится с новой строки)
 
+n = int(input("Введите количество элементов первого массива: "))
+lst = [int(input("Введите номер: ")) for el in range(n)]
+
+# dublicates = [lst[num] for num in range(1, len(lst) - 1) if lst[num] > lst[num + 1] and lst[num] > lst[num - 1]]
+# print(f"number {dublicates}, their amount {len(dublicates)}")
+
+count = 0
+for i in range(1, len(lst) - 1):
+    if lst[i] > lst[i + 1] and lst[i] > lst[i - 1]:
+        count += 1
+
+print(count)
